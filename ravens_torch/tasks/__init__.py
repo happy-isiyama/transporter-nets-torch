@@ -20,6 +20,7 @@ from ravens_torch.tasks.stack_block_pyramid import StackBlockPyramid
 from ravens_torch.tasks.sweeping_piles import SweepingPiles
 from ravens_torch.tasks.task import Task
 from ravens_torch.tasks.towers_of_hanoi import TowersOfHanoi
+from ravens_torch.tasks.align_sandwich_corner import AlignSandwichCorner
 
 names = {
     'align-box-corner': AlignBoxCorner,
@@ -36,5 +37,6 @@ names = {
     'place-red-in-green': PlaceRedInGreen,
     'stack-block-pyramid': StackBlockPyramid,
     'sweeping-piles': SweepingPiles,
-    'towers-of-hanoi': TowersOfHanoi
+    'towers-of-hanoi': TowersOfHanoi,
+    'align-sandwich-corner': AlignSandwichCorner,
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot name="sandwich.urdf">
+
+  <!-- Base link -->
+  <link name="baselink">
+    <visual>
+      <geometry>
+        <mesh filename="/home/demulab/ros2_ws/src/transporter-nets-torch/ravens_torch/environments/assets/sandwich/sandwich.dae"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <mesh filename="/home/demulab/ros2_ws/src/transporter-nets-torch/ravens_torch/environments/assets/sandwich/sandwich.dae"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <!--origin  xyz="0 0 0" rpy="0 0 1.5708"/--> 
+      
+      <mass value="1.0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+    
+  </link>
+
+</robot>
